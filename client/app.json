@@ -1,0 +1,33 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/disease/disease",
+        "pages/details/details"
+    ],
+
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#333",
+        "navigationBarTitleText": "环球易诊",
+        "navigationBarTextStyle": "white"
+    },
+
+    "tabBar": {
+        "color": "#dddddd",
+        "selectedColor": "#3cc51f",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [{
+          "pagePath": "pages/index/index",
+          "iconPath": "images/common/wechat.png",
+          "selectedIconPath": "images/common/wechatHL.png",
+          "text": "组件"
+        }, {
+          "pagePath": "pages/disease/disease",
+          "iconPath": "images/common/wechat.png",
+          "selectedIconPath": "images/common/wechatHL.png",
+          "text": "接口"
+        }]
+    }
+
+}
