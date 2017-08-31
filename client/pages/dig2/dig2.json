@@ -1,0 +1,8 @@
+{
+  "navigationBarTextStyle": "black", 
+  "navigationBarBackgroundColor": "#fcfcfc", 
+  "navigationBarTitleText": "（2/3）既往治疗", 
+  "backgroundColor": "#ffffff", 
+  "enablePullDownRefresh": true, 
+  "backgroundTextStyle": "dark"
+}

@@ -1,0 +1,56 @@
+<view class="c-minheight wx-view_gm1Y6o" >
+    <image class="wx-image_WJYfGg"  mode="scaleToFill" src="http://ac-eh9unt0e.clouddn.com/f2dae0e38f276c95d110.png" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image:     url(http://ac-eh9unt0e.clouddn.com/f2dae0e38f276c95d110.png); "/>
+</view>
+<view class="c-minheight wx-view_8GrULQ" >
+    <view class="c-minheight wx-view_hcQkNv" >
+        <view class="c-minheight wx-view_lKomHA" >
+            <text class="c-block wx-text_bRsc4N" >请选择您的病种</text>
+        </view>
+        <view class="c-minheight wx-view_D8eK97" >
+            <view class="c-minheight wx-view_KhwfBT" >
+                <image class="wx-image_CvYVxt"  mode="scaleToFill" src="http://ac-eh9unt0e.clouddn.com/edf7519f0e69cc38a200.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://ac-eh9unt0e.clouddn.com/edf7519f0e69cc38a200.png); "/>
+                <text class="c-block wx-text_AMxKZi" >肺癌</text>
+            </view>
+            <view class="c-minheight wx-view_KhwfBT" >
+                <image class="wx-image_CvYVxt"  mode="scaleToFill" src="http://ac-eh9unt0e.clouddn.com/8188c7189bb95ec75f14.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://ac-eh9unt0e.clouddn.com/8188c7189bb95ec75f14.png); "/>
+                <text class="c-block wx-text_AMxKZi" >结直肠</text>
+            </view>
+            <view class="c-minheight wx-view_KhwfBT" >
+                <image class="wx-image_CvYVxt"  mode="scaleToFill" src="http://ac-eh9unt0e.clouddn.com/79ba8ce38780bb797a7f.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://ac-eh9unt0e.clouddn.com/79ba8ce38780bb797a7f.png); "/>
+                <text class="c-block wx-text_AMxKZi" >白血病</text>
+            </view>
+        </view>
+        <view class="c-minheight wx-view_D8eK97" >
+            <view class="c-minheight wx-view_KhwfBT" >
+                <image class="wx-image_CvYVxt"  mode="scaleToFill" src="http://ac-eh9unt0e.clouddn.com/629122c718e0e3ffb9e3.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://ac-eh9unt0e.clouddn.com/629122c718e0e3ffb9e3.png); "/>
+                <text class="c-block wx-text_AMxKZi" >肝癌</text>
+            </view>
+            <view class="c-minheight wx-view_KhwfBT" >
+                <image class="wx-image_CvYVxt"  mode="scaleToFill" src="http://ac-eh9unt0e.clouddn.com/3b44d6d16856c852aaf7.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://ac-eh9unt0e.clouddn.com/3b44d6d16856c852aaf7.png); "/>
+                <text class="c-block wx-text_AMxKZi" >乳腺癌</text>
+            </view>
+            <view class="c-minheight wx-view_KhwfBT" >
+                <image class="wx-image_CvYVxt"  mode="scaleToFill" src="http://ac-eh9unt0e.clouddn.com/1c206e84c590490a9eb8.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://ac-eh9unt0e.clouddn.com/1c206e84c590490a9eb8.png); "/>
+                <text class="c-block wx-text_AMxKZi" >膀胱癌</text>
+            </view>
+        </view>
+        <view class="c-minheight wx-view_D8eK97" >
+            <view class="c-minheight wx-view_KhwfBT" >
+                <image class="wx-image_CvYVxt"  mode="scaleToFill" src="http://ac-eh9unt0e.clouddn.com/4f22fd8a86dd5022e9b0.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://ac-eh9unt0e.clouddn.com/4f22fd8a86dd5022e9b0.png); "/>
+                <text class="c-block wx-text_AMxKZi" >胃癌</text>
+            </view>
+            <view class="c-minheight wx-view_KhwfBT" >
+                <image class="wx-image_CvYVxt"  mode="scaleToFill" src="http://ac-eh9unt0e.clouddn.com/78ad3db6894c3e2056ff.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://ac-eh9unt0e.clouddn.com/78ad3db6894c3e2056ff.png); "/>
+                <text class="c-block wx-text_AMxKZi" >黑色素</text>
+            </view>
+            <view class="c-minheight wx-view_KhwfBT" >
+                <image class="wx-image_CvYVxt"  mode="scaleToFill" src="http://ac-eh9unt0e.clouddn.com/ca83b20022e4828c0ebc.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://ac-eh9unt0e.clouddn.com/ca83b20022e4828c0ebc.png); "/>
+                <text class="c-block wx-text_AMxKZi" >胰腺癌</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="c-minheight wx-view_Rw71mn" >
+    <text class="c-block wx-text_2jXdb4" >仅作为治疗信息参考所用，不能作为临床诊断依据，  
+        请联系您的主治大夫获取权威决策</text>
+</view>

@@ -1,0 +1,8 @@
+{
+  "navigationBarTextStyle": "black", 
+  "navigationBarBackgroundColor": "#fcfcfc", 
+  "navigationBarTitleText": "基因检测数据", 
+  "backgroundColor": "#ffffff", 
+  "enablePullDownRefresh": true, 
+  "backgroundTextStyle": "dark"
+}

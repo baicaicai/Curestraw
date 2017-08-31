@@ -2,31 +2,37 @@
     "pages": [
         "pages/index/index",
         "pages/disease/disease",
+        "pages/drugs/drugs",
         "pages/details/details"
     ],
 
     "window": {
         "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#333",
+        "navigationBarBackgroundColor": "#1a80b6",
         "navigationBarTitleText": "环球易诊",
         "navigationBarTextStyle": "white"
     },
 
     "tabBar": {
-        "color": "#dddddd",
-        "selectedColor": "#3cc51f",
+        "color": "#ffffff",
+        "selectedColor": "#ffffff",
         "borderStyle": "black",
-        "backgroundColor": "#ffffff",
+        "backgroundColor": "#1a80b6",
         "list": [{
-          "pagePath": "pages/index/index",
-          "iconPath": "images/common/wechat.png",
-          "selectedIconPath": "images/common/wechatHL.png",
-          "text": "组件"
+            "pagePath": "pages/index/index",
+            "iconPath": "images/common/wechat.png",
+            "selectedIconPath": "images/common/wechatHL.png",
+            "text": "首页"
         }, {
-          "pagePath": "pages/disease/disease",
-          "iconPath": "images/common/wechat.png",
-          "selectedIconPath": "images/common/wechatHL.png",
-          "text": "接口"
+            "pagePath": "pages/disease/disease",
+            "iconPath": "images/common/wechat.png",
+            "selectedIconPath": "images/common/wechatHL.png",
+            "text": "环球新药"
+        }, {
+            "pagePath": "pages/drugs/drugs",
+            "iconPath": "images/common/wechat.png",
+            "selectedIconPath": "images/common/wechatHL.png",
+            "text": "环球新药"
         }]
     }
 

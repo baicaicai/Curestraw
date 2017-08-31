@@ -1,0 +1,96 @@
+<view class="wx-view_gdraUb" >
+    <view class="wx-view_vwOjMF" >
+        <text class="c-block wx-text_7mtrnK" >EFGR</text>
+        <radio-group class="wx-radio-group_6HIkZr" >
+            <label class="radio c-block weui-radio-label_BDrMRB" >
+                <radio class="wx-radio_cw2Pm9"  type="radio"/>
+                <text class="radio-text wx-text_0qXh47" >阳性</text>
+            </label>
+            <label class="radio c-block weui-radio-label_BDrMRB" >
+                <radio class="wx-radio_cw2Pm9"  type="radio"/>
+                <text class="radio-text wx-text_0qXh47" >阴性</text>
+            </label>
+            <label class="radio c-block weui-radio-label_BDrMRB" >
+                <radio class="wx-radio_cw2Pm9"  type="radio"/>
+                <text class="radio-text wx-text_0qXh47" >女</text>
+            </label>
+        </radio-group>
+    </view>
+    <view class="wx-view_vwOjMF" >
+        <text class="c-block wx-text_7mtrnK" >ALK</text>
+        <radio-group class="wx-radio-group_6HIkZr" >
+            <label class="radio c-block weui-radio-label_BDrMRB" >
+                <radio class="wx-radio_cw2Pm9"  type="radio"/>
+                <text class="radio-text wx-text_0qXh47" >阳性</text>
+            </label>
+            <label class="radio c-block weui-radio-label_BDrMRB" >
+                <radio class="wx-radio_cw2Pm9"  type="radio"/>
+                <text class="radio-text wx-text_0qXh47" >阴性</text>
+            </label>
+            <label class="radio c-block weui-radio-label_BDrMRB" >
+                <radio class="wx-radio_cw2Pm9"  type="radio"/>
+                <text class="radio-text wx-text_0qXh47" >未知</text>
+            </label>
+        </radio-group>
+    </view>
+    <view class="wx-view_vwOjMF" >
+        <text class="c-block wx-text_7mtrnK" >POS1</text>
+        <radio-group class="wx-radio-group_6HIkZr" >
+            <label class="radio c-block weui-radio-label_BDrMRB" >
+                <radio class="wx-radio_cw2Pm9"  type="radio"/>
+                <text class="radio-text wx-text_0qXh47" >阳性</text>
+            </label>
+            <label class="radio c-block weui-radio-label_BDrMRB" >
+                <radio class="wx-radio_cw2Pm9"  type="radio"/>
+                <text class="radio-text wx-text_0qXh47" >阴性</text>
+            </label>
+            <label class="radio c-block weui-radio-label_BDrMRB" >
+                <radio class="wx-radio_cw2Pm9"  type="radio"/>
+                <text class="radio-text wx-text_0qXh47" >未知</text>
+            </label>
+        </radio-group>
+    </view>
+    <view class="wx-view_vwOjMF" >
+        <text class="c-block wx-text_7mtrnK" >KRAS</text>
+        <radio-group class="wx-radio-group_6HIkZr" >
+            <label class="radio c-block weui-radio-label_BDrMRB" >
+                <radio class="wx-radio_cw2Pm9"  type="radio"/>
+                <text class="radio-text wx-text_0qXh47" >阳性</text>
+            </label>
+            <label class="radio c-block weui-radio-label_BDrMRB" >
+                <radio class="wx-radio_cw2Pm9"  type="radio"/>
+                <text class="radio-text wx-text_0qXh47" >阴性</text>
+            </label>
+            <label class="radio c-block weui-radio-label_BDrMRB" >
+                <radio class="wx-radio_cw2Pm9"  type="radio"/>
+                <text class="radio-text wx-text_0qXh47" >未知</text>
+            </label>
+        </radio-group>
+    </view>
+    <view class="wx-view_vwOjMF" >
+        <text class="c-block wx-text_7mtrnK" >RET</text>
+        <radio-group class="wx-radio-group_6HIkZr" >
+            <label class="radio c-block weui-radio-label_BDrMRB" >
+                <radio class="wx-radio_cw2Pm9"  type="radio"/>
+                <text class="radio-text wx-text_0qXh47" >阳性</text>
+            </label>
+            <label class="radio c-block weui-radio-label_BDrMRB" >
+                <radio class="wx-radio_cw2Pm9"  type="radio"/>
+                <text class="radio-text wx-text_0qXh47" >阴性</text>
+            </label>
+            <label class="radio c-block weui-radio-label_BDrMRB" >
+                <radio class="wx-radio_cw2Pm9"  type="radio"/>
+                <text class="radio-text wx-text_0qXh47" >未知</text>
+            </label>
+        </radio-group>
+    </view>
+    <view class="wx-view_vwOjMF" >
+        <text class="c-block wx-text_7mtrnK" >PD-L1表达</text>
+        <input class="c-block c-fullwidth wx-input_fbl9IQ"  name="input1" placeholder="This is a input" type="text"/>
+    </view>
+</view>
+<view class="wx-view_1p4IEn" >
+    <button class="wx-button_WeurV7"  formType="submit" hover-class="button-hover" size="default" type="primary">
+        下一步
+    </button>
+</view>
