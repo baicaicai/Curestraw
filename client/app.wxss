@@ -1,3 +1,6 @@
+@import 'style/weui.wxss';
+@import 'style/cool360.wxss';
+
 /* 基础样式 */
 
 view,
@@ -45,6 +48,10 @@ radio-group {
     display: block;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> dfd989a52af3ca40cbbf248cfb1860d2f773ba36
 :before,
 :after,
 ::before,
@@ -91,6 +98,7 @@ radio-group {
     -webkit-line-clamp: 2;
     overflow: hidden;
 }
+<<<<<<< HEAD
 
 
 /* 自定义样式 */
@@ -967,6 +975,8 @@ radio-group {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+=======
+>>>>>>> dfd989a52af3ca40cbbf248cfb1860d2f773ba36
 
 .wx-view_70faNq {
     min-height: 80px;
@@ -2696,9 +2706,19 @@ icon {
     line-height: 28px
 }
 
+<<<<<<< HEAD
 .weui-search-bar__cancel-btn {
     margin-left: 10px;
     line-height: 28px;
     color: #09bb07;
     white-space: nowrap
+=======
+/* 自定义样式 */
+.textTitle{
+        font-size: 17px;
+}
+.textDesc{
+        font-size:13px;
+        color: #888888;
+>>>>>>> dfd989a52af3ca40cbbf248cfb1860d2f773ba36
 }

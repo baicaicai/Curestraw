@@ -2,21 +2,26 @@
     "pages": [
         "pages/index/index",
         "pages/disease/disease",
+<<<<<<< HEAD
         "pages/drugs/drugs",
         "pages/details/details"
+=======
+        "pages/services/services",
+        "pages/services/details/details",
+        "pages/services/drugPrice/drugPrice"
+>>>>>>> dfd989a52af3ca40cbbf248cfb1860d2f773ba36
     ],
-
     "window": {
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#1a80b6",
         "navigationBarTitleText": "环球易诊",
         "navigationBarTextStyle": "white"
     },
-
     "tabBar": {
         "color": "#ffffff",
         "selectedColor": "#ffffff",
         "borderStyle": "black",
+<<<<<<< HEAD
         "backgroundColor": "#1a80b6",
         "list": [{
             "pagePath": "pages/index/index",
@@ -36,4 +41,28 @@
         }]
     }
 
+=======
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "images/common/wechat.png",
+                "selectedIconPath": "images/common/wechatHL.png",
+                "text": "组件"
+            },
+            {
+                "pagePath": "pages/services/drugPrice/drugPrice",
+                "iconPath": "images/common/wechat.png",
+                "selectedIconPath": "images/common/wechatHL.png",
+                "text": "接口"
+            },
+            {
+                "pagePath": "pages/services/services",
+                "iconPath": "images/common/wechat.png",
+                "selectedIconPath": "images/common/wechatHL.png",
+                "text": "服务类型"
+            }
+        ]
+    }
+>>>>>>> dfd989a52af3ca40cbbf248cfb1860d2f773ba36
 }
