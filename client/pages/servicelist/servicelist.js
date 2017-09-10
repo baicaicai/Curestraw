@@ -8,7 +8,7 @@ Page({
   /**
    * 页面名称
    */
-  name: "selectdiseaseview",
+  name: "servicelist",
   /**
    * 页面的初始数据
    */

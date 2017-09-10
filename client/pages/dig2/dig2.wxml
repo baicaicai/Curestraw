@@ -1,36 +1,36 @@
-<view class="wx-view_vwOjMF" >
-    <view class="wx-view_6afHjL" >
-        <image class="wx-image_KwZWzP"  mode="scaleToFill" src="http://o3bnyc.creatby.com/diazo/images/image-placeholder.svg" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(http://o3bnyc.creatby.com/diazo/images/image-placeholder.svg);"/>
-        <text class="c-block wx-text_7mtrnK" >手术</text>
+<view class="wx-view-content" >
+    <view class="wx-form-row" >
+        <view class="wx-form-row-item" >
+            <image class="wx-image_tiny"  mode="scaleToFill" src="http://o3bnyc.creatby.com/diazo/images/image-placeholder.svg" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(http://o3bnyc.creatby.com/diazo/images/image-placeholder.svg);"/>
+            <text class="c-block wx-text_label" >手术</text>
+        </view>
+        <text class="c-block wx-text_label" >----</text>
+        <text class="c-block wx-text_label" >----</text>
+        <text class="c-block wx-text_label" >2017-03</text>
     </view>
-    <text class="c-block wx-text_7mtrnK" >----</text>
-    <text class="c-block wx-text_7mtrnK" >----</text>
-    <text class="c-block wx-text_7mtrnK" >2017-03</text>
-</view>
-<view class="wx-view_vwOjMF" >
-    <view class="wx-view_6afHjL" >
-        <image class="wx-image_KwZWzP"  mode="scaleToFill" src="http://o3bnyc.creatby.com/diazo/images/image-placeholder.svg" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(http://o3bnyc.creatby.com/diazo/images/image-placeholder.svg);"/>
-        <text class="c-block wx-text_7mtrnK" >化疗</text>
+    <view class="wx-form-row" >
+        <view class="wx-form-row-item" >
+            <image class="wx-image_tiny"  mode="scaleToFill" src="http://o3bnyc.creatby.com/diazo/images/image-placeholder.svg" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(http://o3bnyc.creatby.com/diazo/images/image-placeholder.svg);"/>
+            <text class="c-block wx-text_label" >化疗</text>
+        </view>
+        <text class="c-block wx-text_label" >吉西他滨</text>
+        <text class="c-block wx-text_label" >4周期</text>
+        <text class="c-block wx-text_label" >2017-03</text>
     </view>
-    <text class="c-block wx-text_7mtrnK" >吉西他滨</text>
-    <text class="c-block wx-text_7mtrnK" >4周期</text>
-    <text class="c-block wx-text_7mtrnK" >2017-03</text>
-</view>
-<view class="wx-view_vwOjMF" >
-    <view class="wx-view_6afHjL" >
-        <image class="wx-image_KwZWzP"  mode="scaleToFill" src="http://o3bnyc.creatby.com/diazo/images/image-placeholder.svg" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(http://o3bnyc.creatby.com/diazo/images/image-placeholder.svg);"/>
-        <text class="c-block wx-text_7mtrnK" >靶向药</text>
+    <view class="wx-form-row" >
+        <view class="wx-form-row-item" >
+            <image class="wx-image_tiny"  mode="scaleToFill" src="http://o3bnyc.creatby.com/diazo/images/image-placeholder.svg" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(http://o3bnyc.creatby.com/diazo/images/image-placeholder.svg);"/>
+            <text class="c-block wx-text_label" >靶向药</text>
+        </view>
+        <text class="c-block wx-text_label" >易瑞沙</text>
+        <text class="c-block wx-text_label" >已耐药</text>
+        <text class="c-block wx-text_label" >2017-03</text>
     </view>
-    <text class="c-block wx-text_7mtrnK" >易瑞沙</text>
-    <text class="c-block wx-text_7mtrnK" >已耐药</text>
-    <text class="c-block wx-text_7mtrnK" >2017-03</text>
-</view>
-<view class="c-minheight wx-view_zA1Txu" >
-    <image class="wx-image_MGTeE8"  mode="scaleToFill" src="http://ac-eh9unt0e.clouddn.com/b624f6da2b71571d312f.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://ac-eh9unt0e.clouddn.com/b624f6da2b71571d312f.png); "/>
-    <text class="c-block wx-text_HoyCky" >添加既往治疗历史</text>
-</view>
-<view class="wx-view_1p4IEn" >
-    <button class="wx-button_WeurV7"  formType="submit" hover-class="button-hover" size="default" type="primary">
+    <view class="wx-form-row-center" >
+        <image class="wx-button_square"  mode="scaleToFill" src="http://ac-eh9unt0e.clouddn.com/b624f6da2b71571d312f.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://ac-eh9unt0e.clouddn.com/b624f6da2b71571d312f.png); "/>
+        <text class="c-block wx-text_label" >添加既往治疗历史</text>
+    </view>
+    <button class="wx-button_primary"  formType="submit" hover-class="button-hover" size="default" type="primary">
         下一步
     </button>
 </view>

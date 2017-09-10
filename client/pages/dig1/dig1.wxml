@@ -1,67 +1,67 @@
-<form class="c-minheight wx-form_yptM94" >
+<form class="wx-form" >
     <view class="wx-view_gdraUb" >
         <view class="wx-view_9f9g36" >
-            <icon class="wx-icon_XKqu8j"  size="23" type="success"/>
-            <text class="c-block wx-text_j1Nb72" >患者基本信息</text>
+            <icon class="wx-icon_sm"  size="23" type="success"/>
+            <text class="wx-text_title" >患者基本信息</text>
         </view>
-        <view class="wx-view_vwOjMF" >
-            <text class="c-block wx-text_7mtrnK" >患者年龄：</text>
-            <input class="c-block c-fullwidth wx-input_s2QAzt"  name="input1" placeholder="This is a input" type="text"/>
+        <view class="wx-list-row" >
+            <text class="wx-text_label" >患者年龄：</text>
+            <input class="c-block c-fullwidth wx-input"  name="input1" placeholder="This is a input" type="text"/>
         </view>
-        <view class="wx-view_vwOjMF" >
-            <text class="c-block wx-text_7mtrnK" >患者年龄：</text>
-            <radio-group class="wx-radio-group_6HIkZr" >
-                <label class="radio c-block weui-radio-label_BDrMRB" >
-                    <radio class="wx-radio_cw2Pm9"  type="radio"/>
-                    <text class="radio-text wx-text_0qXh47" >男</text>
+        <view class="wx-list-row" >
+            <text class="c-block wx-text_label" >患者年龄：</text>
+            <radio-group class="wx-radio-group" >
+                <label class="radio c-block wx-radio-item" >
+                    <radio class="wx-radio-button"  type="radio"/>
+                    <text class="wx-radio-label" >男</text>
                 </label>
-                <label class="radio c-block weui-radio-label_BDrMRB" >
-                    <radio class="wx-radio_cw2Pm9"  type="radio"/>
-                    <text class="radio-text wx-text_0qXh47" >女</text>
+                <label class="radio c-block wx-radio-item" >
+                    <radio class="wx-radio-button"  type="radio"/>
+                    <text class="wx-radio-label" >女</text>
                 </label>
             </radio-group>
         </view>
-        <view class="wx-view_vwOjMF" >
-            <text class="c-block wx-text_7mtrnK" >疾病类型：</text>
-            <picker class="wx-picker_FE5eJX"  mode="selector">
-                <text class="c-block wx-text_d31ekT" >肺癌</text>
+        <view class="wx-list-row" >
+            <text class="c-block wx-text_label" >疾病类型：</text>
+            <picker class="wx-picker"  mode="selector">
+                <text class="c-block wx-text_label" >肺癌</text>
             </picker>
         </view>
-        <view class="wx-view_vwOjMF" >
-            <text class="c-block wx-text_7mtrnK" >疾病分型：</text>
-            <picker class="wx-picker_FE5eJX"  mode="selector">
-                <text class="c-block wx-text_d31ekT" >非小细胞腺癌</text>
+        <view class="wx-list-row" >
+            <text class="c-block wx-text_label" >疾病分型：</text>
+            <picker class="wx-picker"  mode="selector">
+                <text class="c-block wx-text_label" >非小细胞腺癌</text>
             </picker>
         </view>
     </view>
-    <view class="wx-view_YRkvIi" />
+    <view class="wx-view-sepearator" />
     <view class="wx-view_gdraUb" >
         <view class="wx-view_9f9g36" >
-            <icon class="wx-icon_XKqu8j"  size="23" type="success"/>
-            <text class="c-block wx-text_j1Nb72" >疾病进展情况</text>
+            <icon class="wx-icon_sm"  size="23" type="success"/>
+            <text class="c-block wx-text_title" >疾病进展情况</text>
         </view>
-        <view class="wx-view_vwOjMF" >
-            <text class="c-block wx-text_7mtrnK" >初次确诊：</text>
-            <picker class="wx-picker_FE5eJX"  mode="selector">
-                <text class="c-block wx-text_d31ekT" >2017年12月21日</text>
+        <view class="wx-list-row" >
+            <text class="c-block wx-text_label" >初次确诊：</text>
+            <picker class="wx-picker"  mode="selector">
+                <text class="c-block wx-text_label" >2017年12月21日</text>
             </picker>
         </view>
-        <view class="wx-view_vwOjMF" >
-            <text class="c-block wx-text_7mtrnK" >疾病分期：</text>
+        <view class="wx-list-row" >
+            <text class="c-block wx-text_label" >疾病分期：</text>
             <picker class="wx-picker_FE5eJX"  mode="selector">
-                <text class="c-block wx-text_d31ekT" >I期</text>
+                <text class="c-block wx-text_label" >I期</text>
             </picker>
         </view>
-        <view class="wx-view_vwOjMF" >
-            <text class="c-block wx-text_7mtrnK" >体力评分</text>
-            <picker class="wx-picker_FE5eJX"  mode="selector">
-                <text class="c-block wx-text_d31ekT" >1分</text>
+        <view class="wx-list-row" >
+            <text class="c-block wx-text_label" >体力评分</text>
+            <picker class="wx-picker"  mode="selector">
+                <text class="c-block wx-text_label" >1分</text>
             </picker>
         </view>
     </view>
 </form>
-<view class="wx-view_1p4IEn" >
-    <button class="wx-button_WeurV7"  formType="submit" hover-class="button-hover" size="default" type="primary">
+<view class="c-minheight wx-view-content" >
+    <button class="wx-button_primary"  formType="submit" hover-class="button-hover" size="default" type="primary">
         下一步
     </button>
 </view>

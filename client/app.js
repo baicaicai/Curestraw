@@ -4,6 +4,7 @@
 
 var qcloud = require('./vendor/wafer2-client-sdk/index');
 var config = require('./config');
+var AV = require('./vendor/av-weapp-min.js');
 
 App({
     /**
@@ -11,5 +12,15 @@ App({
      */
     onLaunch() {
         qcloud.setLoginUrl(config.service.loginUrl);
+
+        AV.init({
+            appId: '5E1AAuPh4XpujiDnxGNKo8t3-gzGzoHsz',
+            appKey: 'TohXj4W2SNACyItgiwkAHTHg',
+        });
+
+        console.log(AV);
+
     }
+
+
 });

@@ -6,14 +6,14 @@ Page({
     /**
      * 页面名称
      */
-    name: "index",
+    name: "drugdetail",
     /**
      * 页面的初始数据
      */
 
     data: {
 
-        todos: []
+
 
     },
 
@@ -28,10 +28,10 @@ Page({
      * 生命周期函数--监听页面初次渲染完成
      */
     onReady() {
-        new AV.Query('Todo')
+        new AV.Query('Products')
             .descending('createdAt')
             .find()
-            .then(todos => this.setData({ todos }))
+            .then(products => this.setData({ products }))
             .catch(console.error);
     },
 
@@ -63,7 +63,5 @@ Page({
 
 
     //以下为自定义点击事件
-
-    tap_0e018233: function(e) {},
 
 })

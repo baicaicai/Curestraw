@@ -1,0 +1,18 @@
+<view class="c-minheight wx-view-content" >
+    <view class="wx-view-serviceListItem" >
+        <navigator class="listitem-navigator"  hover-class="navigator-hover">
+            <image class="wx-imgae-serviceThumb"  mode="aspectFill" src="http://qty83k.creatby.com/materials/origin/d142783088b632980283a188f9dff128_origin.jpg" style="background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url(http://qty83k.creatby.com/materials/origin/d142783088b632980283a188f9dff128_origin.jpg); "/>
+            <view class="wx-view_cPj0ok2" >
+                <text class="c-block wx-text-serviceTitle" >远程问诊服务（3000元起）</text>
+                <text class="c-block wx-text-serviceDesc" >患者在国内通过远程会诊获取海外医生的诊断意见及合法处方，治疗所需药品由医生所在医院或连锁药店提供，在国内进行治疗！</text>
+            </view>
+        </navigator>
+        <navigator class="listitem-navigator"  hover-class="navigator-hover">
+            <image class="wx-imgae-serviceThumb"  mode="aspectFill" src="http://qty83k.creatby.com/materials/origin/d142783088b632980283a188f9dff128_origin.jpg" style="background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url(http://qty83k.creatby.com/materials/origin/d142783088b632980283a188f9dff128_origin.jpg); "/>
+            <view class="wx-view_cPj0ok2" >
+                <text class="c-block wx-text-serviceTitle" >出国就医服务</text>
+                <text class="c-block wx-text-serviceDesc" >环球易诊帮助患者联系海外顶尖医院及医生，先期先进性远程会诊，确定诊断方案后，患者可出境去医生所在医院进行就诊！</text>
+            </view>
+        </navigator>
+    </view>
+</view>

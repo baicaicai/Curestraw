@@ -1,0 +1,74 @@
+<view class="wx-view-content-full" >
+    <image class="wx-image-service-full"  mode="scaleToFill" src="http://o3bnyc.creatby.com/diazo/images/image-placeholder.svg" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(http://o3bnyc.creatby.com/diazo/images/image-placeholder.svg);"/>
+</view>
+<view class="wx-service-info" >
+    <view class="wx-list-desc" >
+        <text class="c-block wx-text-title" >环球海外远程问诊</text>
+        <text class="c-block wx-text-desc" >患者在国内通过远程会诊获取海外医生的诊断意见及合法处方，治疗所需药品由医生所在医院或连锁药店提供，在国内进行治疗！</text>
+    </view>
+    <view class="wx-list-price" >
+        <text class="wx-text-servicePrice" >4999 元</text>
+    </view>
+</view>
+<view class="wx-view-content-full" >
+    <view class="wx-view-serviceNotice" >
+        <text class="wx-text_serviceWarning" >以上服务并不含药品及治疗费用，我们每周更新海外药品服务价格，您可点击进行查询</text>
+    </view>
+</view>
+<view class="wx-view-seperator" />
+<view class="wx-view-content-full" >
+    <navigator class="wx-navigator_serviceDetails"  hover-class="navigator-hover" open-type="redirect">
+        <button class="wx-button_serviceButton"  hover-class="button-hover" size="default" type="default">
+            服务内容及流程
+        </button>
+        <button class="wx-button_serviceButton"  hover-class="button-hover" size="default" type="default">
+            常见问题
+        </button>
+        <button class="wx-button_serviceButton"  hover-class="button-hover" size="default" type="default">
+            评论
+        </button>
+    </navigator>
+</view>
+<view class="c-minheight wx-view_content" />
+<view class="c-minheight wx-view_content" />
+<view class="c-minheight wx-view_content" >
+    <view class="commentlistwrap" >
+        <view class="commentlistitem" >
+            <navigator class="nav_userlink"  hover-class="navigator-hover">
+                <view class="likeuser fm2" >
+                    <image class="useravatar"  mode="aspectFill" src="http://imgcdn.guoku.com/avatar/50/681eb4e30ac36d9481ea421c3fc61c6b.jpg" style="background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url(http://imgcdn.guoku.com/avatar/50/681eb4e30ac36d9481ea421c3fc61c6b.jpg); "/>
+                </view>
+            </navigator>
+            <view class="c-minheight wx-view_WnUrtw" >
+                <view class="wx-view_F9ISUC" >
+                    <navigator class="wx-navigator_wTcTS2"  hover-class="navigator-hover">
+                        <text class="wx-text_71u3gA" >木芽</text>
+                    </navigator>
+                    <view class="wx-view_wrkAD7" >
+                        <image class="wx-image_YoXk15"  src="http://qty83k.creatby.com/materials/origin/53a095f5786a4f0e1e50eea5ec5c84bc_origin.png"/>
+                    </view>
+                </view>
+                <text class="c-block wx-text_kGXxsa" >在植觉买过东西，每一件都是用心之作。很喜欢植觉的调调，不争不抢。今天在这个app上无意中也看到了植觉小物，小确幸顿时溢满心间</text>
+                <view class="comment_operate" >
+                    <view class="wx-view_h6iSr9" >
+                        <view class="commentlikebtn" >
+                            <image class="wx-image_YoXk15"  src="http://qty83k.creatby.com/materials/origin/2459ad45d8071985f1cf7f91f3b3df66_origin.png"/>
+                        </view>
+                        <view class="commentreplybtn" >
+                            <image class="wx-image_YoXk15"  src="http://qty83k.creatby.com/materials/origin/0564a45ab780222757935674e13d6919_origin.png"/>
+                        </view>
+                    </view>
+                    <text class="listitem_creattime" >2016.10.29</text>
+                </view>
+            </view>
+        </view>
+        <button bindtap="tap_3013baf2" class="wx-button_comment"   hover-class="button-hover" size="default" type="default">
+            写点评
+        </button>
+    </view>
+</view>
+<view class="wx-view_cSA0oR" >
+    <button class="wx-button_Pkw49W"  hover-class="button-hover" size="default" type="primary">
+        在线咨询
+    </button>
+</view>

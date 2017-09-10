@@ -1,8 +1,0 @@
-{
-  "navigationBarTextStyle": "black", 
-  "navigationBarBackgroundColor": "#fcfcfc", 
-  "navigationBarTitleText": "突破性疗法自测", 
-  "backgroundColor": "#ffffff", 
-  "enablePullDownRefresh": true, 
-  "backgroundTextStyle": "dark"
-}

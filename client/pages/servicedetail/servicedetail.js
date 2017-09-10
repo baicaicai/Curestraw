@@ -8,7 +8,7 @@ Page({
   /**
    * 页面名称
    */
-  name: "dig-result",
+  name: "servicedetail",
   /**
    * 页面的初始数据
    */
@@ -62,6 +62,9 @@ Page({
 
 
   //以下为自定义点击事件
+  
+  tap_3013baf2:function(e){
+  },
   
 })
 
