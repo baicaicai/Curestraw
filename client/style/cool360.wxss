@@ -111,7 +111,8 @@ radio-group {
     flex-direction: column;
     min-height: 40px;
     border-style: none;
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .wx-image_half {
@@ -130,8 +131,8 @@ radio-group {
     width: 200px;
     justify-content: flex-start;
     align-items: flex-start;
-    min-height: 60px;
-    height: 60px;
+    min-height: 80px;
+    height: 80px;
     max-width: 200px;
     flex: 0 1 auto;
     background-size: cover;
@@ -367,7 +368,8 @@ radio-group {
     flex-direction: column;
     min-height: 40px;
     border-style: none;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .wx-view_flex_row {
@@ -624,9 +626,11 @@ radio-group {
 }
 
 .wx-panel {
-    display: block;
+
     border-bottom: 1px solid rgb(229, 229, 229);
     border-bottom-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .wx-media-box_appmsg {

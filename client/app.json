@@ -17,32 +17,31 @@
         "selectedColor": "#ffffff",
         "borderStyle": "black",
         "backgroundColor": "#1a80b6",
-        "list": [{
-            "pagePath": "pages/index/index",
-            "iconPath": "images/common/wechat.png",
-            "selectedIconPath": "images/common/wechatHL.png",
-            "text": "首页"
-        }, {
-            "pagePath": "pages/drugprice/drugprice",
-            "iconPath": "images/common/wechat.png",
-            "selectedIconPath": "images/common/wechatHL.png",
-            "text": "环球新药"
-        }, {
-            "pagePath": "pages/drugdetail/drugdetail",
-            "iconPath": "images/common/wechat.png",
-            "selectedIconPath": "images/common/wechatHL.png",
-            "text": "环球新药"
-        }, {
-            "pagePath": "pages/servicelist/servicelist",
-            "iconPath": "images/common/wechat.png",
-            "selectedIconPath": "images/common/wechatHL.png",
-            "text": "环球新药"
-        }, {
-            "pagePath": "pages/servicedetail/servicedetail",
-            "iconPath": "images/common/wechat.png",
-            "selectedIconPath": "images/common/wechatHL.png",
-            "text": "环球新药"
-        }]
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "images/common/wechat.png",
+                "selectedIconPath": "images/common/wechatHL.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/drugprice/drugprice",
+                "iconPath": "images/common/wechat.png",
+                "selectedIconPath": "images/common/wechatHL.png",
+                "text": "环球新药"
+            },
+            {
+                "pagePath": "pages/servicelist/servicelist",
+                "iconPath": "images/common/wechat.png",
+                "selectedIconPath": "images/common/wechatHL.png",
+                "text": "环球新药"
+            },
+            {
+                "pagePath": "pages/servicedetail/servicedetail",
+                "iconPath": "images/common/wechat.png",
+                "selectedIconPath": "images/common/wechatHL.png",
+                "text": "环球新药"
+            }
+        ]
     }
-
 }

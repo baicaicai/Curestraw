@@ -1,18 +1,20 @@
 <view class="wx-view-content" >
-    <view class="wx-view-list" >
-        <view class="wx-list-item" wx:for="{{products}}" >
-            <view class="wx-list-thumb" >
-                <image class="wx-image_JUJsxU"  mode="scaleToFill" src="{{item.thumbImageUrl}}"/>
-            </view>
-            <view class="wx-list-desc" >
-                <text class="c-block wx-text-title" >{{item.title}}</text>
-                <text class="c-block wx-text-desc" >{{item.manufactor}}</text>
-                <text class="c-block wx-text-desc" >{{item.packageSize}}</text>
-            </view>
-            <view class="wx-list-price" >
-                <text class="wx-text-origin" >香港参考价</text>
-                <text class="wx-text-price" >{{item.price}}</text>
+    <navigator url="/pages/drugdetail/drugdetail?title=this"  wx:for="{{products}}">
+        <view class="wx-view-list" >
+            <view class="wx-list-item"  >
+                    <view class="wx-list-thumb" >
+                        <image class="wx-image_JUJsxU"  mode="scaleToFill" src="{{item.thumbImageUrl}}"/>
+                    </view>
+                    <view class="wx-list-desc" >
+                        <text class="c-block wx-text-title" >{{item.title}}</text>
+                        <text class="c-block wx-text-desc" >{{item.manufactor}}</text>
+                        <text class="c-block wx-text-desc" >{{item.packageSize}}</text>
+                    </view>
+                    <view class="wx-list-price" >
+                        <text class="wx-text-origin" >香港参考价</text>
+                        <text class="wx-text-price" >{{item.price}}</text>
+                    </view>        
             </view>
         </view>
-    </view>
+    </navigator>
 </view>
