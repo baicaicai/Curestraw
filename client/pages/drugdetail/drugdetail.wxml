@@ -1,15 +1,15 @@
 <view class="wx-view-content-full" >
-    <image class="wx-image-service-full"  mode="scaleToFill" src="http://o3bnyc.creatby.com/diazo/images/image-placeholder.svg" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(http://o3bnyc.creatby.com/diazo/images/image-placeholder.svg);"/>
+    <image class="wx-image-service-full"  mode="scaleToFill" src="{{product.imageUrl}}"/>
 </view>
 <view class="wx-product-info" >
     <view class="wx-list-desc" >
-        <text class="c-block wx-text-title" >帕姆单抗-Keytruda</text>
-        <text class="c-block wx-text-desc" >厂家：德国默克</text>
-        <text class="c-block wx-text-desc" >规格：40mg/100ml*1瓶</text>
+        <text class="c-block wx-text-title" >{{product.title}}</text>
+        <text class="c-block wx-text-desc" >{{product.manufactor}}</text>
+        <text class="c-block wx-text-desc" >{{product.packageSize}}</text>
     </view>
     <view class="wx-list-price" >
         <text class="wx-text-origin" >香港参考价</text>
-        <text class="wx-text-price" >24000 元</text>
+        <text class="wx-text-price" >{{product.price}}</text>
     </view>
 </view>
 <view class="c-minheight wx-view-content" >
@@ -23,28 +23,28 @@
                 <image class="wx-image-prodcutDesc"  mode="scaleToFill" src="http://o3bnyc.creatby.com/diazo/images/image-placeholder.svg" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(http://o3bnyc.creatby.com/diazo/images/image-placeholder.svg);"/>
                 <text class="c-block wx-text-productTitle" >适用症</text>
             </view>
-            <text class="c-block wx-text-productBody" >多大的是打发斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬大师傅大师傅阿斯蒂芬阿斯蒂芬阿斯蒂芬士大夫阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬士大夫阿斯蒂芬发斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬发送到发斯蒂芬阿斯蒂芬爱迪生发送到发生</text>
+            <text class="c-block wx-text-productBody" >{{product.disease}}</text>
         </view>
         <view class="wx-product-desc" >
             <view class="wx-prodcut-desc-title" >
                 <image class="wx-image-prodcutDesc"  mode="scaleToFill" src="http://o3bnyc.creatby.com/diazo/images/image-placeholder.svg" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(http://o3bnyc.creatby.com/diazo/images/image-placeholder.svg);"/>
                 <text class="c-block wx-text-productTitle" >作用机理</text>
             </view>
-            <text class="c-block wx-text-productBody" >多大的是打发斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬大师傅大师傅阿斯蒂芬阿斯蒂芬阿斯蒂芬士大夫阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬士大夫阿斯蒂芬发斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬发送到发斯蒂芬阿斯蒂芬爱迪生发送到发生</text>
+            <text class="c-block wx-text-productBody" >{{product.desc}}</text>
         </view>
         <view class="wx-product-desc" >
             <view class="wx-prodcut-desc-title" >
                 <image class="wx-image-prodcutDesc"  mode="scaleToFill" src="http://o3bnyc.creatby.com/diazo/images/image-placeholder.svg" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(http://o3bnyc.creatby.com/diazo/images/image-placeholder.svg);"/>
                 <text class="c-block wx-text-productTitle" >预期效果</text>
             </view>
-            <text class="c-block wx-text-productBody" >多大的是打发斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬大师傅大师傅阿斯蒂芬阿斯蒂芬阿斯蒂芬士大夫阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬士大夫阿斯蒂芬发斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬发送到发斯蒂芬阿斯蒂芬爱迪生发送到发生</text>
+            <text class="c-block wx-text-productBody" >{{product.result}}</text>
         </view>
         <view class="wx-product-desc" >
             <view class="wx-prodcut-desc-title" >
                 <image class="wx-image-prodcutDesc"  mode="scaleToFill" src="http://o3bnyc.creatby.com/diazo/images/image-placeholder.svg" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat; background-image: url(http://o3bnyc.creatby.com/diazo/images/image-placeholder.svg);"/>
                 <text class="c-block wx-text-productTitle" >禁忌及副作用</text>
             </view>
-            <text class="c-block wx-text-productBody" >多大的是打发斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬大师傅大师傅阿斯蒂芬阿斯蒂芬阿斯蒂芬士大夫阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬士大夫阿斯蒂芬发斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬发送到发斯蒂芬阿斯蒂芬爱迪生发送到发生</text>
+            <text class="c-block wx-text-productBody" >{{product.sideEffect}}</text>
         </view>
     </view>
 </view>

@@ -18,7 +18,7 @@ App({
             appKey: 'TohXj4W2SNACyItgiwkAHTHg',
         });
 
-        console.log(AV);
+        //console.log(AV);
 
     }
 

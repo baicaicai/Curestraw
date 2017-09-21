@@ -7,10 +7,10 @@
 </view>
 <view class="wx-view-content" >
     <view class="wx-view_middle2" >
-        <view class="wx-view_half" >
+        <navigator class="wx-view_half" url="/pages/dig1/dig1">
             <image class="wx-image_half"  mode="scaleToFill" src="http://ac-eh9unt0e.clouddn.com/6500d13529c2db6bd22d.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://ac-eh9unt0e.clouddn.com/6500d13529c2db6bd22d.png); "/>
             <text class="wx-text_sm_bold" >突破性疗法</text>
-        </view>
+        </navigator>
         <view class="wx-view_half" >
             <image class="wx-image_half"  mode="scaleToFill" src="http://ac-eh9unt0e.clouddn.com/04c52d2f46e01f6f945d.png" style="background-size:   100% 100%; background-position:   0% 0%; background-repeat:   no-repeat; background-image: url(http://ac-eh9unt0e.clouddn.com/04c52d2f46e01f6f945d.png); "/>
             <text class="wx-text_sm_bold" >免费咨询</text>

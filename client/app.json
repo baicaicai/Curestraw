@@ -4,7 +4,8 @@
         "pages/servicelist/servicelist",
         "pages/servicedetail/servicedetail",
         "pages/drugprice/drugprice",
-        "pages/drugdetail/drugdetail"
+        "pages/drugdetail/drugdetail",
+        "pages/dig1/dig1"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -17,8 +18,7 @@
         "selectedColor": "#ffffff",
         "borderStyle": "black",
         "backgroundColor": "#1a80b6",
-        "list": [
-            {
+        "list": [{
                 "pagePath": "pages/index/index",
                 "iconPath": "images/common/wechat.png",
                 "selectedIconPath": "images/common/wechatHL.png",

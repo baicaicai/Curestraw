@@ -1,5 +1,5 @@
 <view class="wx-view-content" >
-    <navigator url="/pages/drugdetail/drugdetail?title=this"  wx:for="{{products}}">
+    <navigator url="/pages/drugdetail/drugdetail?id={{item.objectId}}"  wx:for="{{products}}">
         <view class="wx-view-list" >
             <view class="wx-list-item"  >
                     <view class="wx-list-thumb" >

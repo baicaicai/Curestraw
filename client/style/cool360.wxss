@@ -172,6 +172,10 @@ radio-group {
     width: 100%;
 }
 
+.wx-swiper {
+    height: 200px;
+}
+
 .wx-swiper-item1 {
     background-image: url(http://ac-eh9unt0e.clouddn.com/f2dae0e38f276c95d110.png);
     background-size: cover;
@@ -626,7 +630,6 @@ radio-group {
 }
 
 .wx-panel {
-
     border-bottom: 1px solid rgb(229, 229, 229);
     border-bottom-style: none;
     margin-top: 10px;

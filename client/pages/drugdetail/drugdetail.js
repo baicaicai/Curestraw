@@ -12,32 +12,40 @@ Page({
      */
 
     data: {
-
-
-
+        objectId: "",
+        product: {},
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
-    onLoad: function (options) {
-        console.log(options.title); 
+    onLoad: function(options) {
+        this.setData({
+            objectId: options.id
+        })
     },
     /**
      * 生命周期函数--监听页面初次渲染完成
      */
     onReady() {
-        new AV.Query('Products')
-            .descending('createdAt')
-            .find()
-            .then(products => this.setData({ products }))
-            .catch(console.error);
+        // 设置替代全局变量
+
+        var that = this;
+        var query = new AV.Query('Products');
+        query.get(this.data.objectId).then(function(results) {
+            return results.toJSON();
+        }).then(function(results) {
+            that.setData({
+                product: results
+            })
+            console.log(that.data.product);
+        });
     },
 
     /**
      * 生命周期函数--监听页面显示
      */
-    onShow() { },
+    onShow() {},
 
     /**
      * 生命周期函数--监听页面隐藏
