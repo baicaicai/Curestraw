@@ -6,7 +6,7 @@
         </view>
         <view class="wx-list-row" >
             <text class="wx-text_label" >患者年龄：</text>
-            <input class="c-block c-fullwidth wx-input"  name="input1" placeholder="This is a input" type="text"/>
+            <input class="c-block c-fullwidth wx-input"  name="input1" placeholder="请输入" type="text"/>
         </view>
         <view class="wx-list-row" >
             <text class="c-block wx-text_label" >患者年龄：</text>
