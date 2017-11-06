@@ -1,2 +1,3 @@
 @import 'style/weui.wxss';
 @import 'style/cool360.wxss';
+@import 'style/wechatapp.wxss';

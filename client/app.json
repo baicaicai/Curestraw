@@ -5,7 +5,11 @@
         "pages/servicedetail/servicedetail",
         "pages/drugprice/drugprice",
         "pages/drugdetail/drugdetail",
-        "pages/dig1/dig1"
+        "pages/dig1/dig1",
+        "pages/wg/index",
+        "pages/user/user",
+        "pages/setting/setting",
+        "pages/userinfo/userinfo"
     ],
     "window": {
         "backgroundTextStyle": "light",

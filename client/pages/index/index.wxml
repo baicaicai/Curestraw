@@ -16,6 +16,14 @@
             <text class="wx-text_sm_bold" >免费咨询</text>
         </view>
     </view>
+    
+<view class="wx-view_middle2" >
+        <navigator class="wx-view_half" url="/pages/userinfo/userinfo">
+            <image class="wx-image_half"  mode="scaleToFill" src="http://ac-eh9unt0e.clouddn.com/6500d13529c2db6bd22d.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://ac-eh9unt0e.clouddn.com/6500d13529c2db6bd22d.png); "/>
+            <text class="wx-text_sm_bold" >测试</text>
+        </navigator>
+    </view>
+
     <view class="wx-view_middle3" >
         <view class="wx-view_indexItem" >
             <view class="wx-view_middle2-item" >

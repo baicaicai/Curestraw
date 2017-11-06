@@ -1,0 +1,15 @@
+<view class="flex-wrap header">
+  <input
+    placeholder="添加一个任务" 
+    bindinput="updateDraft" 
+    value="{{draft}}" 
+    class="new-todo"/>
+  <text style="display: {{draft ? 'inline': 'none'}}" class="add tappable" ontap="addTodo">添加</text>
+   <text style="display: {{draft ? 'inline': 'none'}}" class="add tappable" ontap="addSearch3">查询</text>
+</view>
+<text >{{TestObjectValue}}</text>
+ <ul>
+    <block wx:for="{{TestObjectValue}}">
+   <li> <text >{{testabc}}</text></li>
+     </block>
+  </ul>

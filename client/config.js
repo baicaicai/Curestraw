@@ -22,7 +22,9 @@ var config = {
 
         // 上传图片接口
         uploadUrl: `${host}/weapp/upload`
-    }
+    },
+   // syncURL: 'https://wd3466908426utysad.wilddogio.com',
+   // authDomain: 'wd3466908426utysad.wilddog.com'
 };
 
 module.exports = config;
