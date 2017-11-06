@@ -9,7 +9,8 @@
         "pages/wg/index",
         "pages/user/user",
         "pages/setting/setting",
-        "pages/userinfo/userinfo"
+        "pages/userinfo/userinfo",
+        "pages/login/login"
     ],
     "window": {
         "backgroundTextStyle": "light",

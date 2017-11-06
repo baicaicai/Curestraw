@@ -108,6 +108,7 @@ App({
       }
     },
     globalData: {
-      userInfo: null
+      userInfo: null,
+      wx_user:"123"
     }
 });

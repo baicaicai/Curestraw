@@ -3,6 +3,10 @@ const app = getApp();
 var AV = require('../../vendor/av-weapp-min.js');
 // 创建页面实例对象
 Page({
+  data: {
+    userPhone: '',
+    username: ''
+  },
     /**
      * 页面名称
      */
@@ -21,7 +25,15 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad() {
-
+      if (app.globalData.user == null)      
+      {
+        AV.User.loginWithWeapp().then(user => {
+          app.globalData.user = user.toJSON();
+        }).catch(console.error);
+      }
+      this.setData({
+        userPhone: '13651098773'
+      });
     },
 
     /**
@@ -65,5 +77,40 @@ Page({
     //以下为自定义点击事件
 
     tap_0e018233: function(e) {},
+
+    updateUserPhone: function ({
+    detail: {
+      value
+    }
+  }) {
+      this.setData({
+        userPhone: value
+      });
+    }, 
+
+    specialistScheme: function() {
+      //console.log("1-" + this.data.userPhone);
+      //console.log("1-" + app.globalData);
+      if (app.globalData.user == null || app.globalData.user.mobilePhoneVerified!=true)
+      { 
+        wx.navigateTo({
+          url: '/pages/login/login'
+        })
+      }
+      else {
+        wx.navigateTo({
+          url: '/pages/dig1/dig1'
+        })
+      }
+    },
+
+
+    loginbyphone: function () {
+      //console.log("1-" + this.data.userPhone);
+      //console.log("1-" + app.globalData);
+      wx.navigateTo({
+        url: '/pages/userinfo/userinfo?userPhone=' + this.data.userPhone
+      })
+    },
 
 })

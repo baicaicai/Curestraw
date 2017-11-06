@@ -1,7 +1,7 @@
 // 获取全局应用程序实例对象
 const app = getApp();
 var AV = require('../../vendor/av-weapp-min.js');
-
+const user = AV.User.current();
 Page({
   data: {
     nickName: '',
@@ -17,10 +17,15 @@ Page({
     version: '',
     platform: '',
     system: '',
-    userPhone:''
+    userPhone:'',
+    userPhoneCheck: '790339'
   },
-  onLoad: function () {
+  onLoad: function (option) {
     var that = this;
+    this.setData({
+      userPhone: option.userPhone
+    });
+    console.log("2-"+option.userPhone);
     wx.getUserInfo({
       success: function (res) {
        // var userInfo = res.userInfo //用户基本信息
@@ -90,18 +95,49 @@ Page({
       userPhone: value
     });
   },
+
+  userPhoneCheckInput: function ({
+    detail: {
+      value
+    }
+  }) {
+    this.setData({
+      userPhoneCheck: value
+    });
+  },
+
   wechatLogin: function (e) {
     AV.User.loginWithWeapp().then(user => {
-      this.globalData.user = user.toJSON();
-      user.setMobilePhoneNumber({ userPhone });
+      console.log(user);
+      console.log("sm-" + user.getUsername());
+      console.log("us-" + this.data.userPhone);
+      console.log(user);
+      app.globalData.user = user.toJSON();
+      console.log("u1s-" + app.globalData.user.mobilePhoneVerified);
+      user.setMobilePhoneNumber(this.data.userPhone);
+      //console.log(user.save());
       return user.save();
     }).then(user => {
       // 发送验证短信
-      return AV.User.requestMobilePhoneVerify(user.getMobilePhoneNumber());
-    }).then({
+      console.log("sm-" );
+      //console.log("sm-" + user.isMobilePhoneVerified());
+     // if (!user.mobilePhoneVerified)
+     // {
+        return AV.User.requestMobilePhoneVerify(user.getMobilePhoneNumber());
+      //}
+     // return user;
+    }).then(
+      {
   // 用户填写收到短信验证码后再调用 AV.User.verifyMobilePhone(code) 完成手机号的绑定
   // 成功后用户的 mobilePhoneVerified 字段会被置为 true
   // 此后用户便可以使用手机号加动态验证码登录了
     }).catch(console.error);
+    console.log("rm");
   },
+  
+  wechatPhoneCheck: function(e) {
+    console.log("cm-" + this.data.userPhoneCheck);
+    if (this.data.userPhoneCheck != null && this.data.userPhoneCheck!='')
+    AV.User.verifyMobilePhone(this.data.userPhoneCheck)
+   },
 })

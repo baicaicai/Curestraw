@@ -1,0 +1,90 @@
+.login-section-header{
+  overflow:hidden;
+  display: flex;
+  flex-direction: column;
+  margin-top:100rpx;
+  align-items: center;
+}
+.login-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin:40rpx 0 100rpx;
+  border-radius: 50%;
+  background-size:cover;
+}
+.login-section{
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    padding:0 20rpx;
+}
+.login-hide{
+ display: none;
+}
+.login-show{ 
+ display: block;
+}
+
+.login-item{
+    display:flex;
+    flex:1;
+    flex-direction:row;
+    height:40rpx;
+    line-height:60rpx;
+    margin-bottom:20rpx;
+    margin-right:60rpx;
+    font-size:32rpx;
+    box-sizing:border-box;
+}
+.login-item-h{
+    display:none;
+    flex:1;
+    flex-direction:row;
+    height:40rpx;
+    line-height:60rpx;
+    margin-bottom:20rpx;
+    margin-right:60rpx;
+    font-size:32rpx;
+    box-sizing:border-box;
+}
+
+.login-color{
+    color:#ddd;
+}
+.login-item .login-user, .login-item .login-pwd, .login-item .login-sex, .login-item .login-remeber{
+    flex:2;
+    text-align:right;
+    margin-right:20rpx;
+}
+.login-item input, .login-item radio-group, .login-item switch{
+    flex:8;  
+}
+.login-item input{
+    padding-left:20rpx;
+    border:1px solid #ddd;
+    border-radius:8rpx;
+}
+.login-item radio-group label{
+    margin-right:20rpx;
+}
+.login-item-btn{
+    display: block;
+    padding-top:40rpx;
+    text-align:center;
+}
+.login-item-btn-h{
+    display:none;
+    padding-top:40rpx;
+    text-align:center;
+}
+.login-item-btn button{
+    display:inline-block;
+    width:200rpx;
+    height:60rpx;
+    margin:0 10rpx;
+    line-height:60rpx;
+    font-size:32rpx;
+    color:#fff;
+    background:#1296d3;
+    cursor:pointer;
+}

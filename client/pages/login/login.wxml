@@ -1,0 +1,21 @@
+<view class="contaion">
+    <view class="login-section-header">
+        <image class="login-avatar" src="http://ac-eh9unt0e.clouddn.com/04c52d2f46e01f6f945d.png" />
+    </view>
+    <view class="login-section">
+            <view class="{{showPhoneView?'login-item':'login-item-h'}}" id="v_userPhone">
+                <view class="login-user">手机号</view>
+                <input type="text"  placeholder-class="login-color" placeholder="请输入手机号" value="{{userPhone}}" bindinput="userPhoneInput" id="userPhoneBindinput"  />
+            </view>
+             <view class="{{showPhoneView?'login-item-btn':'login-item-btn-h'}}" id="v_userPhone_sbtn">
+               <button  bindtap="wechatLogin">发送短信</button>
+             </view>
+            <view class="{{showPhoneCheckView?'login-item':'login-item-h'}}"  id="v_userPhoneCheck">
+                <view class="login-user">验证码</view>
+                <input type="text"  placeholder-class="login-color" placeholder="请输入验证码" value="{{userPhoneCheck}}" bindinput="userPhoneCheckInput" id="userPhoneCheckBindinput" />
+            </view>
+            <view class="{{showPhoneCheckView?'login-item-btn':'login-item-btn-h'}}" id="v_userPhone_cbtn">
+                <button bindtap="wechatPhoneCheck">验证</button>
+            </view>
+    </view>
+</view>

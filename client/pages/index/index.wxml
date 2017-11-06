@@ -7,21 +7,26 @@
 </view>
 <view class="wx-view-content" >
     <view class="wx-view_middle2" >
-        <navigator class="wx-view_half" url="/pages/dig1/dig1">
+        <view class="wx-view_half" bindtap="specialistScheme">
             <image class="wx-image_half"  mode="scaleToFill" src="http://ac-eh9unt0e.clouddn.com/6500d13529c2db6bd22d.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://ac-eh9unt0e.clouddn.com/6500d13529c2db6bd22d.png); "/>
             <text class="wx-text_sm_bold" >突破性疗法</text>
-        </navigator>
+        </view>
         <view class="wx-view_half" >
             <image class="wx-image_half"  mode="scaleToFill" src="http://ac-eh9unt0e.clouddn.com/04c52d2f46e01f6f945d.png" style="background-size:   100% 100%; background-position:   0% 0%; background-repeat:   no-repeat; background-image: url(http://ac-eh9unt0e.clouddn.com/04c52d2f46e01f6f945d.png); "/>
             <text class="wx-text_sm_bold" >免费咨询</text>
         </view>
     </view>
-    
-<view class="wx-view_middle2" >
-        <navigator class="wx-view_half" url="/pages/userinfo/userinfo">
-            <image class="wx-image_half"  mode="scaleToFill" src="http://ac-eh9unt0e.clouddn.com/6500d13529c2db6bd22d.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://ac-eh9unt0e.clouddn.com/6500d13529c2db6bd22d.png); "/>
-            <text class="wx-text_sm_bold" >测试</text>
-        </navigator>
+
+<view class="wx-view_middle2" hidden="true">
+        <view class="wx-view_half" >
+             <text class="label">手机号</text>
+      <input value="{{userPhone}}" bindinput="updateUserPhone" id="userPhone" class="account-info-input"/>
+        </view>
+       
+          <button  class="wx-view_half" bindtap="loginbyphone">
+           <image class="wx-image_half"  mode="scaleToFill" src="http://ac-eh9unt0e.clouddn.com/6500d13529c2db6bd22d.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://ac-eh9unt0e.clouddn.com/6500d13529c2db6bd22d.png); "/>
+            <text class="wx-text_sm_bold" >登陆</text>
+          </button>
     </view>
 
     <view class="wx-view_middle3" >

@@ -18,5 +18,8 @@
 <view>系统版本：{{system}}</view>
 <view> </view>
  <text class="label">手机号</text>
-      <input bindinput="userPhoneInput" id="userPhoneBindinput" class="account-info-input"/>
+      <input bindinput="userPhoneInput" id="userPhoneBindinput" class="account-info-input" value="{{userPhone}}"/>
  <button bindtap="wechatLogin">程序登陆</button>
+  <text class="label">验证码</text>
+      <input bindinput="userPhoneCheckInput" id="userPhoneCheckBindinput" class="account-info-input" value="{{userPhoneCheck}}"/>
+ <button bindtap="wechatPhoneCheck">验证</button>
