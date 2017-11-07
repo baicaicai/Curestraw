@@ -130,24 +130,36 @@ Page({
       return user.save();
     }).then(user => {
      var isSuc=true;
-     //AV.User.requestMobilePhoneVerify(user.getMobilePhoneNumber()).catch(isSuc = false);
-     console.log("isSuc=" + isSuc);
-     if (!isSuc)
-     {
+     
+     AV.User.requestMobilePhoneVerify(user.getMobilePhoneNumber()).then(user => {
+       isSuc = true
        this.setData({
-         showPhoneView: true,
-         showPhoneCheckView: false,
+         showPhoneView: false,
+         showPhoneCheckView: true,
        });
-     }
-     else
-     {
-         this.setData({
-           showPhoneView: false,
-           showPhoneCheckView: true,
-      });
-     wx.hideToast()
-     app.globalData.user = user.toJSON();
-     }
+       wx.hideToast();
+     }).catch(
+       //没有异常也会进,暂时不知道catch怎么用
+       isSuc = false
+       );
+       
+    // console.log("isSuc=" + isSuc);
+    // if (!isSuc)
+    // {
+    //   this.setData({
+    //     showPhoneView: true,
+    //     showPhoneCheckView: false,
+   //    });
+    // }
+    // else
+   //  {
+     //    this.setData({
+     //      showPhoneView: false,
+    //       showPhoneCheckView: true,
+    //  });
+     //wx.hideToast();
+    // app.globalData.user = user.toJSON();
+    // }
      return user;
     }).then(
       {
@@ -166,7 +178,22 @@ Page({
       duration: 5000
     })
     if (this.data.userPhoneCheck != null && this.data.userPhoneCheck != '')
-      AV.User.verifyMobilePhone(this.data.userPhoneCheck).catch(
+      AV.User.verifyMobilePhone(this.data.userPhoneCheck).then(user => {
+        wx.hideToast();
+        wx.showToast({
+          title: '验证成功',
+          duration: 5000
+        })
+        //重登陆刷新数据
+        AV.User.loginWithWeapp().then(user => {
+          app.globalData.user = user.toJSON();
+          setTimeout(function () {
+            wx.switchTab({
+              url: '/pages/index/index'
+            })
+          }, 2000)
+        }).catch( console.error);
+      }).catch(
         console.error
        // wx.showToast({
        //   title: '验证码错误',
@@ -176,22 +203,7 @@ Page({
          //   setTimeout(function () {
          // wx.hideToast()
        // }, 3000)
-
       );
-    setTimeout(function () {
-      wx.hideToast();
-      wx.showToast({
-        title: '验证成功',
-        duration: 5000
-      })
-      setTimeout(function () {
-        app.globalData.user = AV.User.current().toJSON();
-        wx.switchTab({
-          url: '/pages/index/index'
-        })
-      }, 3000)
-    }, 3000)
-
   },
   onReady:function(){
     // 页面渲染完成
