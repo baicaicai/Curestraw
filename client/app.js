@@ -20,7 +20,7 @@ App({
             appKey: 'TohXj4W2SNACyItgiwkAHTHg',
         });
       
-        console.log(AV);
+       // console.log(AV);
       //  wilddog.initializeApp(config)
       //  this.todoRef = wilddog.sync().ref('todo').orderByPriority().limitToFirst(20)
      

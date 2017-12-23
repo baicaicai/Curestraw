@@ -33,7 +33,7 @@
                 "pagePath": "pages/drugprice/drugprice",
                 "iconPath": "images/common/wechat.png",
                 "selectedIconPath": "images/common/wechatHL.png",
-                "text": "环球新药"
+                "text": "定制方案"
             },
             {
                 "pagePath": "pages/servicelist/servicelist",
@@ -42,10 +42,10 @@
                 "text": "环球新药"
             },
             {
-                "pagePath": "pages/servicedetail/servicedetail",
+                "pagePath": "pages/userinfo/userinfo",
                 "iconPath": "images/common/wechat.png",
                 "selectedIconPath": "images/common/wechatHL.png",
-                "text": "环球新药"
+                "text": "我"
             }
         ]
     }

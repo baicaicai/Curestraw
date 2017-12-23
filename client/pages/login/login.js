@@ -130,7 +130,6 @@ Page({
       return user.save();
     }).then(user => {
      var isSuc=true;
-     
      AV.User.requestMobilePhoneVerify(user.getMobilePhoneNumber()).then(user => {
        isSuc = true
        this.setData({

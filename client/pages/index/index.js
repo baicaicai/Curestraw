@@ -29,10 +29,11 @@ Page({
       {
         AV.User.loginWithWeapp().then(user => {
           app.globalData.user = user.toJSON();
+          this.loadWeChatInfo(this);
         }).catch(console.error);
       }
       this.setData({
-        userPhone: '13651098773'
+        userPhone: app.globalData.user ? app.globalData.user.mobilePhoneNumber:''
       });
     },
 
@@ -112,5 +113,80 @@ Page({
         url: '/pages/userinfo/userinfo?userPhone=' + this.data.userPhone
       })
     },
+
+    loadWeChatInfo: function (that) {
+      var vc = AV.User.current();
+      wx.getUserInfo({
+        success: function (res) {
+          that.checkUserInfo(res.userInfo);
+        },
+        fail: function () {
+          // fail
+          console.log("获取失败！")
+        },
+        complete: function () {
+          // complete
+          console.log("获取用户信息完成！")
+        }
+      })
+    },
+
+    checkUserInfo: function (userInfo) {
+    var query = new AV.Query('User_weChat_Info');
+    query.equalTo('userId', AV.User.current().id);
+    //query.equalTo('userName', 'mytest');
+    query.find().then(function (otherUsers) {
+      var isFind = false;
+      otherUsers.forEach(function (user_Info) {
+        isFind = true;
+        if (app.globalData.user != null)
+        {
+          user_Info.set('phone',app.globalData.user.mobilePhoneNumber);
+        }
+        if (userInfo!= null) {
+          user_Info.set('city', userInfo.city);
+          user_Info.set('nickName', userInfo.nickName);
+          user_Info.set('sex', userInfo.gender);//性别 0：未知、1：男、2：女
+        }
+        if (AV.User.current() != null) {
+          user_Info.set('userName', AV.User.current().attributes.username);
+        }
+        user_Info.save().then(function (user_Info) {
+          console.log('otherUserid=' + user_Info.id);
+        },
+          function (error) {
+            console.log(error);
+          });
+      });
+      if (!isFind) {
+        var User_Info = AV.Object.extend('User_weChat_Info');
+        // 新建对象
+        var user_Info = new User_Info();
+        if (app.globalData.user != null) {
+          user_Info.set('phone', app.globalData.user.mobilePhoneNumber);
+        }
+        if (userInfo != null) {
+          user_Info.set('city', userInfo.city);
+          user_Info.set('nickName', userInfo.nickName);
+          user_Info.set('sex', userInfo.gender);//性别 0：未知、1：男、2：女
+        }
+        if (AV.User.current() != null) {
+          user_Info.set('userName', AV.User.current().attributes.username);
+          user_Info.set('userId', AV.User.current().id);
+        }
+        user_Info.save().then(function (user_Info) {
+          console.log('objectId is ' + user_Info.id);
+        }, function (error) {
+          console.error(error);
+        });
+      }
+    },
+      function (error) {
+        console.log(error);
+      })
+      .catch(function (error) {
+        alert(JSON.stringify(error));
+      });
+  },
 
 })
