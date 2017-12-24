@@ -37,8 +37,8 @@ Page({
     //console.log(app.globalData.user.mobilePhoneNumber);
     //console.log("2userPhone-" + this.data.userPhone);
     //console.log("2-" + option.userPhone);
-    wx.getUserInfo({
-      success: function (res) {
+    //wx.getUserInfo({
+    //  success: function (res) {
         // var userInfo = res.userInfo //用户基本信息
         // var nickName = userInfo.nickName //用户名
         //var avatarUrl = userInfo.avatarUrl //头像链接
@@ -47,54 +47,54 @@ Page({
         // var city = userInfo.city //所在市
         // var country = userInfo.country //所在国家
         // success
-        that.setData({
-          nickName: res.userInfo.nickName,
-          userInfoAvatar: res.userInfo.avatarUrl,
-          province: res.userInfo.province,
-          city: res.userInfo.city
-        })
-        switch (res.userInfo.gender) {
-          case 0:
-            that.setData({
-              sex: '未知'
-            })
-            break;
-          case 1:
-            that.setData({
-              sex: '男'
-            })
-            break;
-          case 2:
-            that.setData({
-              sex: '女'
-            })
-            break;
-        }
-      },
-      fail: function () {
+    //    that.setData({
+    //      nickName: res.userInfo.nickName,
+     //     userInfoAvatar: res.userInfo.avatarUrl,
+     //     province: res.userInfo.province,
+     //     city: res.userInfo.city
+     //   })
+     //   switch (res.userInfo.gender) {
+    //      case 0:
+     //       that.setData({
+     //         sex: '未知'
+      //      })
+     //       break;
+      //    case 1:
+     //       that.setData({
+      //        sex: '男'
+      //      })
+      //      break;
+     //     case 2:
+     //       that.setData({
+     //         sex: '女'
+     //       })
+     //       break;
+     //   }
+     // },
+     // fail: function () {
         // fail
-        console.log("获取失败！")
-      },
-      complete: function () {
+     //   console.log("获取失败！")
+    //  },
+   //   complete: function () {
         // complete
-        console.log("获取用户信息完成！")
-      }
-    }),
+     //   console.log("获取用户信息完成！")
+     // }
+  //  }),
       //获取系统信息
-      wx.getSystemInfo({
-        success: function (res) {
-          that.setData({
-            model: res.model,//  手机型号
-            pixelRatio: res.pixelRatio,
-            windowWidth: res.windowWidth,
-            windowHeight: res.windowHeight,
-            language: res.language,
-            version: res.version,
-            platform: res.platform,
-            system: res.system//  操作系统版本
-          })
-        }
-      })
+    //  wx.getSystemInfo({
+    //    success: function (res) {
+     //     that.setData({
+     //       model: res.model,//  手机型号
+    //        pixelRatio: res.pixelRatio,
+    //        windowWidth: res.windowWidth,
+    //        windowHeight: res.windowHeight,
+    //        language: res.language,
+    //        version: res.version,
+     //       platform: res.platform,
+     //       system: res.system//  操作系统版本
+      //    })
+    //    }
+    //  })
   },
 
   userPhoneInput: function ({

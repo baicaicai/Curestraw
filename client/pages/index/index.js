@@ -132,8 +132,8 @@ Page({
     },
 
     checkUserInfo: function (userInfo) {
-    var query = new AV.Query('User_weChat_Info');
-    query.equalTo('userId', AV.User.current().id);
+    var query = new AV.Query('user_Info');
+    query.equalTo('user_id', AV.User.current().id);
     //query.equalTo('userName', 'mytest');
     query.find().then(function (otherUsers) {
       var isFind = false;
@@ -149,7 +149,7 @@ Page({
           user_Info.set('sex', userInfo.gender);//性别 0：未知、1：男、2：女
         }
         if (AV.User.current() != null) {
-          user_Info.set('userName', AV.User.current().attributes.username);
+          user_Info.set('user_name', AV.User.current().attributes.username);
         }
         user_Info.save().then(function (user_Info) {
           console.log('otherUserid=' + user_Info.id);
@@ -159,7 +159,7 @@ Page({
           });
       });
       if (!isFind) {
-        var User_Info = AV.Object.extend('User_weChat_Info');
+        var User_Info = AV.Object.extend('user_Info');
         // 新建对象
         var user_Info = new User_Info();
         if (app.globalData.user != null) {
@@ -171,8 +171,8 @@ Page({
           user_Info.set('sex', userInfo.gender);//性别 0：未知、1：男、2：女
         }
         if (AV.User.current() != null) {
-          user_Info.set('userName', AV.User.current().attributes.username);
-          user_Info.set('userId', AV.User.current().id);
+          user_Info.set('user_name', AV.User.current().attributes.username);
+          user_Info.set('user_id', AV.User.current().id);
         }
         user_Info.save().then(function (user_Info) {
           console.log('objectId is ' + user_Info.id);
