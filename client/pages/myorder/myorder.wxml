@@ -1,0 +1,22 @@
+<view class="wx-view-content" >
+    <navigator url="/pages/drugdetail/drugdetail?id={{item.objectId}}"  wx:for="{{orders}}">
+        <view class="wx-view-list" >
+            <view class="wx-list-item"  >
+                    <view class="wx-list-desc" >
+                        <text class="c-block wx-text-title" >{{item.title}}</text>
+                        <text class="c-block wx-text-desc" >价格: ￥{{item.price}}</text>
+                        <text class="c-block wx-text-desc" >状态: {{item.state}}</text>
+                        <text class="c-block wx-text-desc" >收获人: {{item.receiveName}}</text>
+                        <text class="c-block wx-text-desc" >联系电话: {{item.receivePhone}}</text>
+                        <text class="c-block wx-text-desc" >地址: {{item.receiveAddress}}</text>
+                       
+                        
+                    </view>
+                    <view class="wx-list-price" >
+                      <text class="c-block wx-text-desc" >创建时间: {{item.createTime}}</text>
+                          <text class="c-block wx-text-desc" >更新时间: {{item.updateTime}}</text>
+                    </view>        
+            </view>
+        </view>
+    </navigator>
+</view>

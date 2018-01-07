@@ -10,7 +10,8 @@
         "pages/user/user",
         "pages/setting/setting",
         "pages/userinfo/userinfo",
-        "pages/login/login"
+        "pages/login/login",
+        "pages/myorder/myorder"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -42,7 +43,7 @@
                 "text": "环球新药"
             },
             {
-                "pagePath": "pages/userinfo/userinfo",
+                "pagePath": "pages/myorder/myorder",
                 "iconPath": "images/common/wechat.png",
                 "selectedIconPath": "images/common/wechatHL.png",
                 "text": "我"

@@ -119,10 +119,31 @@ Page({
       wx.getUserInfo({
         success: function (res) {
           that.checkUserInfo(res.userInfo);
-        },
-        fail: function () {
+        }, fail: function () {
           // fail
           console.log("获取失败！")
+          wx.showModal({
+            title: '警告',
+            content: '您拒绝了授权,将无法正常登陆程序,点击确定重新获取授权。',
+            success: function (res) {
+              if (res.confirm) {
+                wx.openSetting({
+                  success: (res) => {
+                    if (res.authSetting["scope.userInfo"]) {////如果用户重新同意了授权登录
+                      wx.getUserInfo({
+                        success: function (res) {
+                          that.checkUserInfo(res.userInfo);
+                        }
+                      })
+                    }
+                  }, fail: function (res) {
+                    console.log("授权失败！")
+                  }
+                })
+
+              }
+            }
+          })
         },
         complete: function () {
           // complete
@@ -175,7 +196,7 @@ Page({
           user_Info.set('user_id', AV.User.current().id);
         }
         user_Info.save().then(function (user_Info) {
-          console.log('objectId is ' + user_Info.id);
+          console.log('user_Info save objectId is ' + user_Info.id);
         }, function (error) {
           console.error(error);
         });
