@@ -2,6 +2,7 @@
 const app = getApp();
 var AV = require('../../vendor/av-weapp-min.js');
 const user = AV.User.current();
+var cleardata;
 Page({
   data: {
     orders: [
@@ -19,14 +20,14 @@ Page({
     ],
   },
   onLoad: function (option) {
-   
+    cleardata = this.data.orders
   },
   onShow: function (option) {
     this.LoadOrderData();
   },
   LoadOrderData: function() {
+    this.setData({ orders: [] })
     var that = this;
-
     var query = new AV.Query('order_info');
     query.include('owner');
     query.descending('createdAt')
